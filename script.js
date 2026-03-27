@@ -17,11 +17,20 @@ function start() {
     // 4. what is your name
     let userName = prompt("What is your name");
     console.log(userName);
+    
+     addName(userName);
+
+     let userLastName = prompt("What is your last name");
 }
 
-function addName(newName) {
+function addName(newName, lastName) {
     // 1. add a h2
-    let h2 = document.createElement("h2");
+    let secondHeading = document.createElement("h2");
 
+    secondHeading.innerText = newName;
+
+    secondHeading.style.color = "blue";
+
+    document.body.appendChild(secondHeading);
 }
 
